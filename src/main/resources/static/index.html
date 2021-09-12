@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Customer Information</title>
+	<link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/main.css" rel="stylesheet">
+	<script src="/webjars/jquery/3.1.0/jquery.min.js"></script>
+	<script src="/customer.js"></script>
+	<style>
+		table {
+			border: none;
+			border-spacing: 0;
+			border-collapse: collapse;
+		}
+
+		.error-msg {
+			color: red
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="main-content" class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<form class="form-inline">
+					<div class="form-group">
+						<p id="updateError"></p>
+						<h3>Customer Information</h3>
+						<table border="0">
+							<tr>
+								<th><label for="getCustomerData">Customer Id: </label></th>
+								<td><input type="text" id="customerId" class="form-control"></td>
+							</tr>
+							<tr>
+								<th><label for="updateCustomerData">Phone Number: </label></th>
+								<td><input type="text" id="phoneNumber" class="form-control"></br></td>
+							</tr>
+							<tr>
+								<th rowspan="2">Status: </th>
+								<td><input type="radio" id="status" name="status" value="Active">
+									<label for="active">Active</label></td>
+							</tr>
+							<tr>
+								<td><input type="radio" id="status" name="status" value="InActive">
+									<label for="inActive">In Active</label><br></td>
+							</tr>
+						</table>
+						<table>
+							<div>
+								<br>
+								<button id="getAll" class="btn btn-default" type="submit">Get All Customer Data</button>
+								<button id="getCustomerData" class="btn btn-default" type="submit">Get Customer
+									Data</button>
+								<button id="updateCustomerData" class="btn btn-default" type="submit">Update
+									Status</button>
+							</div>
+						</table>
+					</div>
+					<div>
+						<h3>Result</h3>
+						<table width="60%" border="1">
+							<tr>
+								<th>Id</th>
+								<th>Number</th>
+								<th>Status</th>
+							</tr>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
