@@ -32,7 +32,7 @@ import com.terminus.repository.CustomerRepository;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @ActiveProfiles("test")
-@ContextConfiguration(classes = {SpringSecurityConfig.class,CustomerService.class})
+@ContextConfiguration(classes = {SpringSecurityConfig.class,CustomerServiceApp.class})
 @AutoConfigureMockMvc
 public class CustomerSecurityTest {
 
